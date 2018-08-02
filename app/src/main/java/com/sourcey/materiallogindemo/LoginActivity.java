@@ -1,5 +1,6 @@
 package com.sourcey.materiallogindemo;
 
+import android.animation.ObjectAnimator;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,7 @@ import android.util.Log;
 
 import android.content.Intent;
 import android.view.View;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -49,6 +51,57 @@ public class LoginActivity extends AppCompatActivity {
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
             }
         });
+
+        final View accountView = findViewById(R.id.slider);
+        accountView.setVisibility(View.INVISIBLE);
+        Button hide = findViewById(R.id.snapshot);
+        final boolean[] isUp = {false};
+
+        hide.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (!isUp[0]) {
+                    slideUp(accountView);
+                } else {
+                    slideDown(accountView);
+                }
+                isUp[0] = !isUp[0];
+            }
+        });
+
+
+    }
+
+    // slide the view from below itself to the current position
+    public void slideUp(View view){
+        view.setVisibility(View.VISIBLE);
+        TranslateAnimation animate = new TranslateAnimation(
+                0,                 // fromXDelta
+                0,                 // toXDelta
+                view.getHeight(),  // fromYDelta
+                0);                // toYDelta
+        animate.setDuration(250);
+        animate.setFillAfter(true);
+        view.startAnimation(animate);
+        Button hide = findViewById(R.id.snapshot);
+        ObjectAnimator mover = ObjectAnimator.ofFloat(hide, "translationY", -view.getHeight());
+        mover.start();
+        //hide.startAnimation(animate);
+    }
+
+    // slide the view from its current position to below itself
+    public void slideDown(View view){
+        TranslateAnimation animate = new TranslateAnimation(
+                0,                 // fromXDelta
+                0,                 // toXDelta
+                0,                 // fromYDelta
+                view.getHeight()); // toYDelta
+        animate.setDuration(300);
+        animate.setFillAfter(true);
+        view.startAnimation(animate);
+        Button hide = findViewById(R.id.snapshot);
+        ObjectAnimator mover = ObjectAnimator.ofFloat(hide, "translationY", 0);
+        mover.start();
+        //hide.startAnimation(animate);
     }
 
     public void login() {
