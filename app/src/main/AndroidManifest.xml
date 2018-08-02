@@ -18,6 +18,8 @@
         </activity>
         <activity android:name="com.sourcey.materiallogindemo.LoginActivity" android:theme="@style/AppTheme.Dark" />
         <activity android:name="com.sourcey.materiallogindemo.SignupActivity" android:theme="@style/AppTheme.Dark" />
+        <activity android:name="com.sourcey.materiallogindemo.LoginPermissionActivity" android:theme="@style/AppTheme.Dark" />
+        <activity android:name="com.sourcey.materiallogindemo.LoginPermissionActivity2" android:theme="@style/AppTheme.Dark" />
     </application>
 
 </manifest>

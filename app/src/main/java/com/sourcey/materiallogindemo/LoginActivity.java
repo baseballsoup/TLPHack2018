@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 
-    @BindView(R.id.input_email) EditText _emailText;
+    @BindView(R.id.input_email) EditText _emailText; //gui variables start with
     @BindView(R.id.input_password) EditText _passwordText;
     @BindView(R.id.btn_login) Button _loginButton;
     @BindView(R.id.link_signup) TextView _signupLink;
@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
-        
+
         _loginButton.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -46,12 +46,12 @@ public class LoginActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
                 startActivityForResult(intent, REQUEST_SIGNUP);
                 finish();
-                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
+                overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out); //transition animation
             }
         });
     }
 
-    public void login() {
+    public void login() { //do this when sign in button is pushed
         Log.d(TAG, "Login");
 
         if (!validate()) {

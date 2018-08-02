@@ -44,7 +44,7 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Finish the registration screen and return to the Login activity
                 Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-                startActivity(intent);
+                startActivity(intent); //transition to LoginActivity.class
                 finish();
                 overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
             }
@@ -92,7 +92,11 @@ public class SignupActivity extends AppCompatActivity {
     public void onSignupSuccess() {
         _signupButton.setEnabled(true);
         setResult(RESULT_OK, null);
+
+        Intent intent = new Intent(getApplicationContext(),LoginPermissionActivity.class);
+        startActivity(intent); //transition to LoginActivity.class
         finish();
+        overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
     }
 
     public void onSignupFailed() {
