@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main); //set xml view!
 
 
-        Intent intent = new Intent(this, LoginActivity.class);
+      //  Intent intent = new Intent(this, LoginActivity.class); //loginactiv
+        Intent intent = new Intent(this, LoginPermissionActivity.class); //loginactiv
         startActivity(intent); //start on LoginActivity.class
     }
 

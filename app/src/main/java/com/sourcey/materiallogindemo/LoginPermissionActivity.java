@@ -1,15 +1,10 @@
 package com.sourcey.materiallogindemo;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -17,12 +12,12 @@ import butterknife.ButterKnife;
 public class LoginPermissionActivity extends AppCompatActivity {
     private static final String TAG = "LoginPermissionActivity";
     private static final int REQUEST_SIGNUP = 0;
-      @BindView(R.id.btn_confirm) Button _okButton;
+      @BindView(R.id.btn_accept) Button _okButton;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_view1);
+        setContentView(R.layout.activity_login_permissions);
         ButterKnife.bind(this);
 
         _okButton.setOnClickListener(new View.OnClickListener() {
