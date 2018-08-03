@@ -30,7 +30,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/total"
+                    android:id="@+id/checkingtotal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -39,7 +39,7 @@
                     android:textSize="55dp" />
 
                 <TextView
-                    android:id="@+id/availablenow"
+                    android:id="@+id/checking_availablenow"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -48,7 +48,7 @@
                     android:textSize="15dp" />
 
                 <TextView
-                    android:id="@+id/ondeposit"
+                    android:id="@+id/checking_ondeposit"
                     android:layout_width="match_parent"
                     android:layout_height="33dp"
                     android:gravity="center_horizontal"

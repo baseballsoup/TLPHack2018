@@ -29,6 +29,14 @@ public class CheckingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checking);
         ButterKnife.bind(this);
+        boolean show = getIntent().getExtras().getBoolean("show");
+        if (!show) {
+            TextView titlecheck = findViewById(R.id.checkingtotal);
+            titlecheck.setText("Recent Transactions");
+            findViewById(R.id.checking_availablenow).setVisibility(View.INVISIBLE);
+            findViewById(R.id.checking_ondeposit).setVisibility(View.INVISIBLE);
+        }
+
 
 
     }

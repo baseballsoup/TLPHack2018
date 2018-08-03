@@ -27,4 +27,8 @@
         <item name="android:background">@color/primary</item>
     </style>
 
+    <style name="SwitchCompatTheme" parent = "Theme.AppCompat.Light">
+        <item name = "colorControlActivated">#148E13</item>
+    </style>
+
 </resources>

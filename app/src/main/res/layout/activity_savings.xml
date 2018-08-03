@@ -30,7 +30,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/total"
+                    android:id="@+id/savings_total"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -39,7 +39,7 @@
                     android:textSize="55dp" />
 
                 <TextView
-                    android:id="@+id/availablenow"
+                    android:id="@+id/savings_availablenow"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
@@ -48,11 +48,11 @@
                     android:textSize="15dp" />
 
                 <TextView
-                    android:id="@+id/ondeposit"
+                    android:id="@+id/savings_ondeposit"
                     android:layout_width="match_parent"
                     android:layout_height="33dp"
                     android:gravity="center_horizontal"
-                    android:text="on deposit  |   $50,123.99"
+                    android:text="on deposit  |   $212,040.99"
                     android:textColor="@color/white"
                     android:textSize="17dp" />
 

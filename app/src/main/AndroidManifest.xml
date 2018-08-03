@@ -7,7 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="">
         <activity
-            android:name="com.sourcey.materiallogindemo.MainActivity"
+            android:name="com.sourcey.materiallogindemo.LoginPermissionActivity"
             android:theme="@style/AppTheme.Dark" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,11 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.sourcey.materiallogindemo.LoginActivity" android:theme="@style/AppTheme.Dark" />
         <activity android:name="com.sourcey.materiallogindemo.SignupActivity" android:theme="@style/AppTheme.Dark" />
         <activity android:name="com.sourcey.materiallogindemo.CheckingActivity" android:theme="@style/AppTheme.Dark" />
         <activity android:name="com.sourcey.materiallogindemo.SavingsActivity" android:theme="@style/AppTheme.Dark" />
         <activity android:name="com.sourcey.materiallogindemo.MortgageActivity" android:theme="@style/AppTheme.Dark" />
-        <activity android:name="com.sourcey.materiallogindemo.NoSnapActivity" android:theme="@style/AppTheme.Dark" />
+        <activity android:name="com.sourcey.materiallogindemo.MainActivity" android:theme="@style/AppTheme.Dark" />
+       <!-- <activity android:name="com.sourcey.materiallogindemo.LoginPermissionActivity" android:theme="@style/AppTheme.Dark" />-->
+        <activity android:name="com.sourcey.materiallogindemo.LoginPermissionActivity2" android:theme="@style/AppTheme.Dark" />
+        <activity android:name="com.sourcey.materiallogindemo.LoginPermissionActivity3" android:theme="@style/AppTheme.Dark" />
+        <activity android:name="com.sourcey.materiallogindemo.LoginPermissionActivity4" android:theme="@style/AppTheme.Dark" />
     </application>
 
 </manifest>
