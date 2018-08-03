@@ -36,12 +36,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        accountView = findViewById(R.id.slider);
 
-        LinearLayout checking_account = findViewById(R.id.checking_account);
-        LinearLayout savings_account = findViewById(R.id.savings_account);
-        LinearLayout mortgage_account = findViewById(R.id.mortgage_account);
+        LinearLayout checking_account = null;
+        LinearLayout savings_account = null;
+        LinearLayout mortgage_account = null;
+
+        checking_account = findViewById(R.id.checking_account);
+        savings_account = findViewById(R.id.savings_account);
+        mortgage_account = findViewById(R.id.mortgage_account);
+        accountView = findViewById(R.id.sliderFull);
+
         TextView disable = findViewById(R.id.disable_snapshot);
+
+        boolean noBalance = false;
+        if(noBalance) {
+            checking_account = findViewById(R.id.checking_account_no_balance);
+            savings_account = findViewById(R.id.savings_account_no_balance);
+            mortgage_account = findViewById(R.id.mortgage_account_no_balance);
+            accountView = findViewById(R.id.sliderNoBalance);
+            disable = findViewById(R.id.disable_snapshot_no_balance);
+        }
+
+
+
 
         disable.setOnClickListener(new View.OnClickListener() {
 
@@ -105,7 +122,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        accountView = findViewById(R.id.slider);
         accountView.setVisibility(View.INVISIBLE);
         Button hide = findViewById(R.id.snapshot);
 

@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_alignParentTop="true"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:fillViewport="true"
+        android:paddingTop="56dp"
+        android:id="@+id/linearLayout">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:fillViewport="true"
+            android:layout_marginHorizontal="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="$96,534.02"
+                    android:textColor="@color/white"
+                    android:textSize="55dp" />
+
+                <TextView
+                    android:id="@+id/availablenow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="available now"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/ondeposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:gravity="center_horizontal"
+                    android:text="on deposit  |   $50,123.99"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/date29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="05/31/2018"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$26.74"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $6.33"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="04/31/2018"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$20.11"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $4.12"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="03/31/2018"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$24.71"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $6.41"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="02/31/2018"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$22.54"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $8.44"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="01/31/2018"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$22.33"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $7.26"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="12/31/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$23.94"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $5.88"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="11/30/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$24.24"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $6.66"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="10/31/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$27.74"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $6.66"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="09/30/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$29.24"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $8.86"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="08/31/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$20.19"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $8.12"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="07/31/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$23.34"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $4.65"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="06/30/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$27.74"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $6.66"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="05/31/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$26.66"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $6.44"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="04/30/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$27.74"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $6.66"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_darker"
+                    android:gravity="center_horizontal"
+                    android:text="03/31/2017"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/interest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Interest Payment"
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:id="@+id/intcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="$29.99"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="360dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height=".5dp"
+                    android:paddingVertical="40dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:background="@android:color/white"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp">
+
+                    <TextView
+                        android:id="@+id/tax"
+                        android:layout_width="497dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Federal Witholding Tax"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="Federal Witholding Tax" />
+
+                    <TextView
+                        android:id="@+id/taxcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="- $7.56"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        tools:text="- $6.66" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
